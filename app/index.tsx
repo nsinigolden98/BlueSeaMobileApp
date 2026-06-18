@@ -10,12 +10,11 @@ import {
 export default function SplashScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.replace("/login");
+      router.replace("/onboarding");
     }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []);
-
+  return () => clearTimeout(timer);
+}, []);
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
