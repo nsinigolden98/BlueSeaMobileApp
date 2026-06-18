@@ -1,16 +1,16 @@
+import { router } from "expo-router";
 import React, { useEffect } from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
   ActivityIndicator,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
-import { router } from "expo-router";
 
 export default function SplashScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.replace("/onboarding");
+      router.replace("/login");
     }, 2000);
 
     return () => clearTimeout(timer);
